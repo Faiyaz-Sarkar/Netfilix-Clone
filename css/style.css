@@ -38,6 +38,11 @@ html {
   font-weight: 500;
   border: none;
   border-radius: 5px;
+  transition: all 0.6s ease-in-out;
+}
+#sign-in-btn:hover {
+  box-shadow: 0px 0px 0px 2px whitesmoke;
+  background-color: #c11119;
 }
 .logo img {
   width: 150px;
@@ -79,7 +84,7 @@ html {
   border: 1px solid #636363;
   font-weight: 500;
   font-size: 20px;
-  margin-right: 0.5%;
+  margin-right: 2%;
   outline: none;
   border-radius: 6px;
 }
@@ -93,11 +98,20 @@ html {
   background-color: #e50914;
   font-size: 22px;
   font-weight: 600;
+  cursor: pointer;
   border: none;
   color: white;
   width: 200px;
   height: 57px;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
   border-radius: 6px;
+}
+.hero-content button:hover {
+  box-shadow: 0px 0px 0px 2px whitesmoke;
+  background-color: #c11119;
+  transform: scale(1.1);
 }
 .hero-content {
   width: 100%;
@@ -140,7 +154,7 @@ html {
   position: relative;
 }
 .featureImg {
-  box-shadow: 1px 1px 8px 5px #ddd;
+  box-shadow: 0px 1px 0px 2px #b3b3b3, 0px 1px 0px 3px rgb(85, 221, 223);
   border-radius: 8px;
   width: 100%;
   z-index: 99;

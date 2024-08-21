@@ -44,12 +44,18 @@
             <span>Ready to watch? Enter your email</span> to create or restart
             your <span>membership</span>.
           </p>
-          <div class="sign-in-form">
-            <input placeholder="Email address" type="text" />
+          <form class="sign-in-form" action="/server?email">
+            <input
+              placeholder="Email address"
+              type="text"
+              id="signInEmail"
+              name="Email"
+              required
+            />
             <button>
               Get Started <i class="fa-solid fa-chevron-right"></i>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
@@ -98,5 +104,6 @@
       <button>English</button>
       <span>Clone by Faiyaz Sarkar</span>
     </footer>
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>
