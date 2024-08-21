@@ -1,68 +1,12 @@
 html {
-  font-family: sans-serif;
-  color: white;
   background-color: black;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-b,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-optgroup,
-strong {
-  font-weight: 500;
-}
-
-@font-face {
-  font-display: optional;
-  font-family: NKufi;
-  font-weight: 400;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Regular.woff)
-      format("woff");
-}
-
-@font-face {
-  font-display: optional;
-  font-family: NKufi;
-  font-weight: 500;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/kufi/v4/HandsetSansKufiArabic-Bold.woff)
-      format("woff");
-}
-
-.nkufi-font-loaded {
-  font-family: NKufi, Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
-    sans-serif;
-}
-
-@font-face {
-  font-display: optional;
-  font-family: GraphikTH;
-  font-weight: 400;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Medium.woff)
-      format("woff");
-}
-
-@font-face {
-  font-display: optional;
-  font-family: GraphikTH;
-  font-weight: 500;
-  src: url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff2)
-      format("woff2"),
-    url(https://assets.nflxext.com/ffe/siteui/fonts/graphik/v2/GraphikTH-Bold.woff)
-      format("woff");
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 .hero-section {
   height: 100vh;
@@ -76,6 +20,7 @@ strong {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
 }
 .black-shadow {
   position: absolute;
@@ -107,20 +52,20 @@ strong {
 }
 .hero-content h1 {
   color: white;
-  font-weight: 800;
-  font-size: 2.7rem;
+  font-weight: 700;
+  font-size: 3rem;
   margin-bottom: 18px;
   letter-spacing: -0.5px;
   text-shadow: 0px 0px 63px black;
 }
 .hero-content h3 {
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px;
   font-size: 25px;
   letter-spacing: 0.5px;
 }
 .hero-content p {
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px;
   font-size: 20px;
   letter-spacing: 1px;
@@ -128,16 +73,21 @@ strong {
 .hero-content input {
   padding-left: 10px;
   width: 400px;
-  height: 50px;
+  height: 57px;
   background-color: rgb(16 0 0 / 54%);
   color: white;
   border: 1px solid #636363;
   font-weight: 500;
   font-size: 20px;
+  margin-right: 0.5%;
+  outline: none;
+  border-radius: 6px;
 }
 .hero-content input::placeholder {
   color: #bdbdbd;
-  font-size: 17px;
+  font-size: 16px;
+  padding-left: 5px;
+  font-weight: 400;
 }
 .hero-content button {
   background-color: #e50914;
@@ -146,7 +96,8 @@ strong {
   border: none;
   color: white;
   width: 200px;
-  height: 50px;
+  height: 57px;
+  border-radius: 6px;
 }
 .hero-content {
   width: 100%;
@@ -181,6 +132,7 @@ strong {
   font-size: 23px;
   padding-top: 25px;
   line-height: 30px;
+  font-weight: 400;
 }
 .feature-imageVideo {
   width: 50%;
@@ -231,3 +183,39 @@ strong {
 }
 @media screen and (max-width: 1280) {
 } */
+
+/* footer section */
+footer {
+  width: 76.06%;
+  margin: auto;
+  padding: 50px 0px;
+}
+footer nav ul li a,
+footer span,
+footer span a {
+  color: #b3b3b3;
+}
+footer span:first-child {
+  margin-bottom: 30px;
+  display: block;
+}
+footer button {
+  margin-top: 30px;
+  width: 120px;
+  height: 30px;
+  font-size: 18px;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #5e5e5e;
+  background-color: #0f0f0f;
+}
+footer nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+}
+footer span:last-child {
+  margin-top: 20px;
+  display: block;
+}
